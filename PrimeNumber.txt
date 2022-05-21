@@ -1,0 +1,36 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class PrimeNo {
+    public static void main(String[] args) {
+
+        int arr[]={3,4,5,6,7,8,9,11,13,19};
+
+        /*
+
+
+        Sample Output : 3 , 5 , 7 , 11 , 13 , 19 
+
+
+       */
+
+        for(int i=0;i<arr.length;i++){
+
+            int j=2;
+            int temp=0;
+            while(j<arr[i]){
+                if(arr[i]%j==0){
+                    temp=2;
+                }
+                j++;
+            }if(temp==0){
+                System.out.print(arr[i]+" ");
+            }
+            }
+
+        }
+
+
+
+}
